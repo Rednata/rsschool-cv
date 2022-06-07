@@ -1,1 +1,101 @@
-/* My style.css file */
+@font-face {
+    font-family: Gilroy;
+    src: url(./assets/Gilroy-Regular.ttf);
+  
+  }
+  
+  *{
+    box-sizing: border-box;
+  }
+  body{
+    max-width: 1440px;
+    margin: 0 auto;
+    font-family: "Gilroy", sans-serif;
+    line-height: 1.7em;
+    letter-spacing: 0.05em;
+    color:#000;
+  }
+  
+  .header{
+    display: flex;
+    justify-content: space-between;
+  
+  }
+  .photo{
+    width: 25%;
+  }
+  .navigation{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: right;
+    padding-top: 2%;
+  }
+  
+  .navigation__link{
+    padding: 20px;
+    text-decoration: none;
+    color: #595757;
+  }
+  .portfolio{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #ffde7c;
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+  
+  .portfolio__Subtitle{
+    /* border: 1px solid green; */
+    width: 34%;
+    padding-left: 3%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    background-color: #000;
+    color: #fff;
+    font-size: 120%;
+  }
+  .portfolio__title{
+    font-size: 280%; 
+    font-weight: bold;
+    padding-left: 6%;
+    
+    /* padding-left: 30%; */
+  }
+  
+  .container{
+    display: flex;
+    
+    /* border: 1px solid blue; */
+  }
+  
+  .section__title{
+    font-size: 180%;
+  }
+  
+  .section{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .section1 {
+    width: 30%;
+    background-color: #595757;
+    padding-left: 3%;
+    color: #fff;
+  }
+  .section2{
+    width: 70%;
+    /* background-color: #cfcccc; */
+    background-color: rgba(255, 222, 124, 0.2);
+    padding-left: 10%;
+  }
+  
+  /* .section__title, .section__content{
+    padding-left: 30px;
+  } */
+  
+  .section__contentList{
+    list-style: none;
+    padding-left: 0px;
+  }
