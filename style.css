@@ -8,7 +8,7 @@
     box-sizing: border-box;
   }
   body{
-    max-width: 1440px;
+    max-width: 1024px;
     margin: 0 auto;
     font-family: "Gilroy", sans-serif;
     line-height: 1.7em;
@@ -35,8 +35,17 @@
   .navigation__link{
     padding: 20px;
     text-decoration: none;
-    color: #595757;
+    color: #000;
+    font-weight: bold;
+    padding-top: 5%;
+    padding-bottom: 5%;
   }
+  .navigation__link:hover, .navigation__link:hover:visited{
+    color: #ffde7c;
+    background-color: #595757;
+  }
+
+
   .portfolio{
     width: 100%;
     display: flex;
@@ -72,8 +81,32 @@
   
   .section__title{
     font-size: 180%;
+    
   }
-  
+
+  .section__title::after{
+      content: '';
+      display: block;
+      height: 10px;
+      width: 50%;
+      /* padding-top: 2%; */
+      border-bottom: 2px solid #ffde7c;
+      /* border-bottom: 2px solid #595757; */
+    
+  }
+
+  .section__title-long::after{
+      width: 30%; 
+}
+
+  code{
+    font-size: 1.2em;
+    line-height: 1.3em;
+  }
+  span{
+    font-size: 0.8em;
+    font-style: italic;
+  }
   .section{
     padding-top: 20px;
     padding-bottom: 20px;
@@ -99,3 +132,22 @@
     list-style: none;
     padding-left: 0px;
   }
+
+ .footer{
+   background-color: #ffde7c;
+   display: flex;
+   align-items: center;
+ }
+   
+.link{
+  /* display: block; */
+  width: 10%;
+  padding-left: 3%;
+  
+  
+}
+ .year{
+   font-size: 1.5em;
+   padding-left: 14%;
+   font-weight: bold;
+ }
