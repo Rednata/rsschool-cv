@@ -1,0 +1,179 @@
+  @font-face {
+    font-family: Arimo;
+    src: url(./assets/Arimo-Regular.ttf);
+  }
+
+  *{
+    box-sizing: border-box;
+  }
+
+  body{
+    max-width: 1024px;
+    min-height: 100vh;
+    margin: 0 auto;
+    font-family: "Arimo", sans-serif;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+    color:#000;
+  }
+  
+  .header{
+    display: flex;
+    justify-content: space-between;
+  
+  }
+  .photo{
+    width: 25%;
+  }
+
+  .nav{
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-top: 2%;
+  }
+  
+  .nav__link{
+    padding: 5% 20px 5% 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+  }
+  .nav__link:hover, .nav__link:hover:visited{
+    color: #ffde7c;
+    background-color: #595757;
+  }
+
+  .portfolio{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: #ffde7c;
+  }
+  
+  .portfolio__Subtitle{
+    width: 34%;
+    padding-left: 3%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    font-size: 120%;
+    background-color: #000;
+    color: #fff;
+  }
+
+  .portfolio__title{
+    padding-left: 6%;
+    font-size: 280%; 
+    font-weight: bold;
+  }
+  
+  .container{
+    display: flex;
+  }
+
+  .section{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .section1 {
+    width: 30%;
+    padding-left: 3%;
+    background-color: #595757;
+    color: #fff;
+  }
+
+  .section__title{
+    margin-bottom: 0;
+    padding-bottom: 2%;
+    font-size: 180%;    
+    letter-spacing: 2px;
+  }
+  
+  .section__title::after{
+    content: '';
+    display: block;
+    height: 10px;
+    width: 50%;
+    border-bottom: 2px solid #ffde7c;    
+    }
+
+  .section__List{
+    list-style: square;
+    padding-left: 0px;
+    list-style-position: inside;
+  }
+
+  .spanCursive, .spanPython{
+    padding-right: 3%;
+    font-style: italic;
+  }
+
+  .section2{
+    width: 70%;
+    padding-left: 10%;
+    background-color: rgba(255, 222, 124, 0.2);
+  }
+
+  .section__title--long::after{
+    width: 30%; 
+  }
+  
+.section__content{
+  padding-right: 10%;
+}
+
+  .spanPython{
+    font-size: 80%;
+  }
+
+  .code{
+    margin-top: 0;
+    padding-top: 0;
+    font-size: 120%;
+    line-height: 1.4em;
+  }
+
+.myproject__link{
+  text-decoration: none;
+  color: #000;
+}
+
+  .myproject__link:hover{
+    font-size: 110%;
+    font-weight: bold;
+    transition: font-size 0.3s;
+  }
+
+ .footer{
+   display: flex;
+   justify-content: space-between;
+   padding: 2% 5%;
+   background-color: #ffde7c;  
+ }
+
+ .logoRS{
+  width: 30%;
+}
+   
+.footer__logo{
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  width: 30%;
+}
+ 
+.logoGH{
+  width: 100%;
+}
+
+ .year{
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 130%;
+  padding-left: 14%;
+  font-weight: bold;  
+ }
