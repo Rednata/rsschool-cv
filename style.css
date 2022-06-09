@@ -1,17 +1,18 @@
-@font-face {
-    font-family: Gilroy;
-    src: url(./assets/Gilroy-Regular.ttf);
-  
+  @font-face {
+    font-family: Arimo;
+    src: url(./assets/Arimo-Regular.ttf);
   }
-  
+
   *{
     box-sizing: border-box;
   }
+
   body{
     max-width: 1024px;
+    min-height: 100vh;
     margin: 0 auto;
-    font-family: "Gilroy", sans-serif;
-    line-height: 1.7em;
+    font-family: "Arimo", sans-serif;
+    line-height: 150%;
     letter-spacing: 0.05em;
     color:#000;
   }
@@ -24,130 +25,155 @@
   .photo{
     width: 25%;
   }
-  .navigation{
+
+  .nav{
     display: flex;
+    justify-content: right;
     flex-wrap: wrap;
     list-style: none;
-    justify-content: right;
     padding-top: 2%;
   }
   
-  .navigation__link{
-    padding: 20px;
+  .nav__link{
+    padding: 5% 20px 5% 20px;
     text-decoration: none;
-    color: #000;
     font-weight: bold;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    color: #000;
   }
-  .navigation__link:hover, .navigation__link:hover:visited{
+  .nav__link:hover, .nav__link:hover:visited{
     color: #ffde7c;
     background-color: #595757;
   }
-
 
   .portfolio{
     width: 100%;
     display: flex;
     align-items: center;
-    background-color: #ffde7c;
     padding-top: 1%;
     padding-bottom: 1%;
+    background-color: #ffde7c;
   }
   
   .portfolio__Subtitle{
-    /* border: 1px solid green; */
     width: 34%;
     padding-left: 3%;
     padding-top: 0.5%;
     padding-bottom: 0.5%;
+    font-size: 120%;
     background-color: #000;
     color: #fff;
-    font-size: 120%;
   }
+
   .portfolio__title{
+    padding-left: 6%;
     font-size: 280%; 
     font-weight: bold;
-    padding-left: 6%;
-    
-    /* padding-left: 30%; */
   }
   
   .container{
     display: flex;
-    
-    /* border: 1px solid blue; */
-  }
-  
-  .section__title{
-    font-size: 180%;
-    
   }
 
-  .section__title::after{
-      content: '';
-      display: block;
-      height: 10px;
-      width: 50%;
-      /* padding-top: 2%; */
-      border-bottom: 2px solid #ffde7c;
-      /* border-bottom: 2px solid #595757; */
-    
-  }
-
-  .section__title-long::after{
-      width: 30%; 
-}
-
-  code{
-    font-size: 1.2em;
-    line-height: 1.3em;
-  }
-  span{
-    font-size: 0.8em;
-    font-style: italic;
-  }
   .section{
     padding-top: 20px;
     padding-bottom: 20px;
   }
+
   .section1 {
     width: 30%;
-    background-color: #595757;
     padding-left: 3%;
+    background-color: #595757;
     color: #fff;
   }
-  .section2{
-    width: 70%;
-    /* background-color: #cfcccc; */
-    background-color: rgba(255, 222, 124, 0.2);
-    padding-left: 10%;
+
+  .section__title{
+    margin-bottom: 0;
+    padding-bottom: 2%;
+    font-size: 180%;    
+    letter-spacing: 2px;
   }
   
-  /* .section__title, .section__content{
-    padding-left: 30px;
-  } */
-  
-  .section__contentList{
-    list-style: none;
+  .section__title::after{
+    content: '';
+    display: block;
+    height: 10px;
+    width: 50%;
+    border-bottom: 2px solid #ffde7c;    
+    }
+
+  .section__List{
+    list-style: square;
     padding-left: 0px;
+    list-style-position: inside;
+  }
+
+  .spanCursive, .spanPython{
+    padding-right: 3%;
+    font-style: italic;
+  }
+
+  .section2{
+    width: 70%;
+    padding-left: 10%;
+    background-color: rgba(255, 222, 124, 0.2);
+  }
+
+  .section__title--long::after{
+    width: 30%; 
+  }
+  
+.section__content{
+  padding-right: 10%;
+}
+
+  .spanPython{
+    font-size: 80%;
+  }
+
+  .code{
+    margin-top: 0;
+    padding-top: 0;
+    font-size: 120%;
+    line-height: 1.4em;
+  }
+
+.myproject__link{
+  text-decoration: none;
+  color: #000;
+}
+
+  .myproject__link:hover{
+    font-size: 110%;
+    font-weight: bold;
+    transition: font-size 0.3s;
   }
 
  .footer{
-   background-color: #ffde7c;
    display: flex;
-   align-items: center;
+   justify-content: space-between;
+   padding: 2% 5%;
+   background-color: #ffde7c;  
  }
-   
-.link{
-  /* display: block; */
-  width: 10%;
-  padding-left: 3%;
-  
-  
+
+ .logoRS{
+  width: 30%;
 }
+   
+.footer__logo{
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  width: 30%;
+}
+ 
+.logoGH{
+  width: 100%;
+}
+
  .year{
-   font-size: 1.5em;
-   padding-left: 14%;
-   font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 130%;
+  padding-left: 14%;
+  font-weight: bold;  
  }
