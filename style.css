@@ -1,0 +1,197 @@
+@font-face {
+  font-family: Arimo;
+  src: url(./assets/Arimo-Regular.ttf);
+}
+
+*{
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+html {
+  scroll-behavior: smooth; 
+}
+
+.bodyWrapper {
+  max-width: 1024px;
+  min-width: 100vh;;
+  margin: 0 auto;
+  font-family: "Arimo", sans-serif;
+  line-height: 150%;
+  letter-spacing: 0.05em;
+  color:#000;
+  background-color: rgba(89, 87, 87, 0.2);
+  box-shadow: 5px 4px 10px 4px #595757;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;  
+}
+
+.photo {
+  width: 32%;  
+}
+
+.nav{
+  display: flex;
+  justify-content: right;
+  flex-wrap: wrap;
+  list-style: none;
+  padding-top: 2%;
+}
+
+.nav__link{
+  padding: 10% 20px 5% 20px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9em;
+  border-radius: 10px;
+  color: #000;
+}
+.nav__link:hover, .nav__link:hover:visited{
+  color: #ffde7c;
+  background-color: #b9b8b8;
+  transition: all 0.4s;
+  border-radius: 10px;
+}
+
+.portfolio{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  background-color: #ffde7c;
+}
+
+.portfolio__Subtitle{
+  width: 34%;
+  padding-left: 3%;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  font-size: 120%;
+  background-color: #000;
+  color: #fff;
+}
+
+.portfolio__title{
+  padding-left: 8%;
+  font-size: 280%; 
+  font-weight: bold;
+}
+
+.container{
+  display: flex;
+}
+
+.section{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.section1 {
+  width: 32%;
+  padding-left: 3%;
+  padding-right: 2%;
+  background-color: #595757;
+  color: #fff;
+}
+
+.section__title{
+  margin-bottom: 0;
+  padding-bottom: 2%;
+  font-size: 180%;    
+  letter-spacing: 2px;
+}
+
+.section__title::after{
+  content: '';
+  display: block;
+  height: 10px;
+  width: 55%;
+  border-bottom: 2px solid #ffde7c;    
+  }
+
+.section__List{
+  list-style: square;
+  padding-left: 0px;
+  list-style-position: inside;
+}
+
+.spanCursive, .spanPython{
+  padding-right: 3%;
+  font-style: italic;
+}
+
+.section2{
+  width: 68%;
+  padding-left: 10%;
+  background-color: #f5ecd1;
+}
+
+.section__title--long::after{
+  width: 30%; 
+}
+
+.section__content{
+padding-right: 10%;
+}
+
+.spanPython{
+  font-size: 80%;
+}
+
+.code{
+  margin-top: 0;
+  padding-top: 0;
+  font-size: 120%;
+  line-height: 1.4em;
+}
+
+.myproject__link{
+text-decoration: none;
+color: #000;
+}
+
+.myproject__link:hover{
+  font-size: 110%;
+  font-weight: bold;
+  transition: font-size 0.3s;
+}
+
+.footer{
+ display: flex;
+ justify-content: space-between;
+ padding: 0% 6%;
+ background-color: #ffde7c;  
+}
+
+.logoRS{
+width: 60%;
+height: 5em;
+}
+
+.footer__logo{
+display: flex;
+justify-content: right;
+align-items: center;
+width: 30%;
+}
+
+.logoGH{
+width: 100%;
+}
+
+.year{
+margin-top: 0;
+margin-bottom: 0;
+font-size: 130%;
+padding-left: 14%;
+font-weight: bold;  
+}
