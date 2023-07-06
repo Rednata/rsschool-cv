@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="assets/favicon.ico">
+  <title>CV</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+  <body class="bodyWrapper">
+    <header class="header">
+      <img class="photo" src="./assets/kot-barsik.jpg" alt="my photo">
+      
+      <nav>
+        <ul class="nav">
+          <li><a class="nav__link" href="#Contacts">Contacts</a></li>
+          <li><a class="nav__link" href="#Summary">Summary</a></li>
+          <li><a class="nav__link" href="#Skills">Skills</a></li>
+          <li><a class="nav__link" href="#Code">Code</a></li>
+          <li><a class="nav__link" href="#Education">Education</a></li>
+          <li><a class="nav__link" href="#MyProjects">My Projects</a></li>
+        </ul>
+      </nav>
+    </header>
+  
+    <main class="main">
+      <section class="portfolio">
+        <div class="portfolio__Subtitle">
+          frontend-developer
+        </div>
+        <h1 class="portfolio__title">Natalya Makarova</h1>
+      </section>
+  
+      <div class="container">
+        <section class="section section1">
+          <h2 class="section__title" id="Contacts">Contacts</h2>
+          <ul class="section__List">
+            <li><span class="spanCursive">mail:</span> 
+              <a href="mailto:maknatosh@gmail.com">
+                maknatosh@gmail.com
+              </a>
+            </li>
+            <li><span class="spanCursive">github:</span>
+              <a href="https://github.com/Rednata">Rednata
+              </a>
+          </li>            
+            <li><span class="spanCursive">discord-RS:</span> Нати(@Rednata)</li>
+          </ul>
+        </section>
+        <section class="section section2">
+          <h2 class="section__title section__title--long" id="Summary">Summary</h2>
+          <div class="section__content">
+            My main work experience is sales. But over time, it stopped to bring joy to me. I would like to create something and see the results, and not sell. I wish to learn new things, systematize knowledge and apply theme in practice.
+          </div>
+        </section>
+      </div>
+  
+      <div class="container">
+        <section class="section section1">
+          <h2 class="section__title" id="Skills">Skills</h2>
+          <ul class="section__List">
+            <li>Python</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>BEM-naming</li>
+            <li>VS Code</li>
+            <li>Figma</li>
+            <li>PyCharm</li>
+          </ul>
+        </section>
+        <section class="section section2">
+          <h2 class="section__title section__title--long" id="Code">
+            Code<span class="spanPython spanCursive"> (Python)</span></h2>
+            <pre class="code section__content">
+                  <code> 
+  def spin_words(sentence):
+    a = list(sentence.split())
+    for i in range(len(a)):
+      if len(a[i]) >= 5:
+        a[i] = a[i][::-1]
+    return ' '.join(a)
+              </code>
+            </pre>
+        </section>
+      </div>
+  
+      <div class="container">
+        <section class="section section1">
+          <h2 class="section__title" id="Education">Education</h2>
+          <ul class="section__List">
+            <li>Python for beginners</li>
+            <li>HTML&CSS for beginners</li>
+            <li>Languages: English(A1)</li>
+          </ul>
+        </section>
+  
+        <section class="section section2">
+          <h2 class="section__title section__title--long" id="MyProjects">My projects</h2>
+          <ul class="section__List">
+            <li><a class="myproject__link" href="https://rednata.github.io/Rezume/"
+                target="_blank"> My first Resume</a></li>
+            <li><a class="myproject__link" href="https://rednata.github.io/CoffeHouse/"
+                target="_blank"> Coffee House</a></li>
+          </ul>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <a href="https://rs.school/js-stage0/" target="_blank">
+        <img class="logoRS" src="./assets/rs_school_js.svg" alt="link RSSchool">
+      </a>
+
+    <div class="footer__logo">
+      <a href="https://github.com/Rednata" target="_blank">
+        <img class="logoGH" src="./assets/github-logo_icon-icons.com_73546.png" alt="linkGithab profile">
+
+      </a>
+      <p class="year">2023</p>
+    </div>
+  </footer>
+
+</body>
+</html>
